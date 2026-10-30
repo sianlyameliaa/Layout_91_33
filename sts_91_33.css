@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.menu a{
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    color: black;
+    margin: 50px;
+    transition: 0.3 ease;
+}
+.menu a:hover{
+    transform: scale (1.1)
+}
+.home{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #5a6aff;
+    padding: 100px 20px 30px;
+    border-bottom: 2px solid black;
+}
+.home:before{
+    z-index: 777;
+    content: '';
+    position: absolute;
+    background: rgba(3, 94, 251, 0.078);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.home video{
+    z-index: 000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+div.content{
+    z-index: 999;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #00000067;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: flex;
+    gap: 60px;
+}
+.teks{
+    z-index: 999;
+    width: 400px;
+    height: 250px;
+    align-content: center;
+    justify-content: center;
+}
+.teks p{
+    text-align: justify;
+    margin-bottom: 20px;
+    color: white;
+}
+.teks h1{
+    font-family: "Yellow Banana";
+    width: 220px;
+    color: white;
+    text-shadow: 0;
+    transition: 0.3s ease;
+}
+.teks h1:hover{
+    transform: scale(1.1);
+    color: rgb(178, 216, 255);
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.413);
+}
+.teks a{
+    color:#2696E9;
+    background: #fff;
+    text-decoration: none;
+    padding: 15px 35px;
+    font-size: 1.1em;
+    font-weight: 600;
+    border-radius: 2px;
+}
+.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: 3px solid white;
+}
+.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+.foto img.fototop{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.fototop{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto img.fotobottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.fotobottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.video-slide{
+    position: absolute;
+    width: 100%;
+    clip-path: circle(0% at 50% 50%);
+}
+.video-slide.active{
+    clip-path: circle(100% at 50% 50%);
+    transition: 1s ease;
+    transition-property: clip-path;
+}
+@media (max-width: 1040px){
+    section{
+        padding: 100px 20px;
+    }
+}
+.about{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: url(gradientbg.jpg);
+    background-size: cover;
+    padding: 100px 20px;
+}
+.about h2{
+    font-family: "Yellow Banana";
+    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff;
+    color: #ffb700;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    font-size: 40px;
+    margin-bottom: 15px;
+    transition: 0.3s ease;
+}
+.about h2:hover{
+    transform: scale(1.1);
+    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff, 3px 4px 6px rgba(0, 0, 0, 0.413);
+}
+.about .cnt{
+    z-index: 999;
+    border-radius: 15px;
+    padding: 20px;
+    background-color: #00000067;
+    width: 70%;
+    align-items: center;
+    justify-content: center;
+    align-self: center;
+    display: block;
+}
+.about .cnt .fotofoto{
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+}
+.about .cnt .fotofoto .foto1{
+    position: relative;
+    width: 320px; 
+    height: 240px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: 3px solid white;
+}
+.about .cnt .fotofoto .foto1 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+.about .cnt .fotofoto .foto1 img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.about .cnt .fotofoto .foto1 img.top:hover{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.about .cnt .fotofoto .foto1 img.bottom{
+    opacity: 0;
+    z-index: 2;
+}
+.about .cnt .fotofoto .foto1 img.bottom:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.about .cnt .fotofoto .foto2{
+    position: relative;
+    width: 320px;
+    height: 240px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border: 3px solid white;
+}
+.about .cnt .fotofoto .foto2 img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+.about .cnt .fotofoto .foto2 img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.about .cnt .fotofoto .foto2 img.top:hover{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.about .cnt .fotofoto .foto2 img.bottom{
+    opacity: 0;
+    z-index: 2;
+}
+.about .cnt .fotofoto .foto2 img.bottom:hover{
+    opacity: 1;
+    transform: scale(1.1);
+}
+.about .cnt .penjelasan{
+    margin: 20px;
+    text-align: justify;
+    display: block;
+    text-indent: 15px;
+    color: white;
+}
+.about .cnt .penjelasan p:not(last-child){
+    margin-bottom: 5px;
+}
+@font-face{
+    font-family: "Yellow Banana";
+    src: url("Yellow\ Banana.otf");
+}
+.gallery{
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #2696E9;
+    background-size: cover;
+}
+.gallery h2{
+    font-family: "Yellow Banana";
+    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff;
+    color: #ffb700;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 580px;
+    display: flex;
+    font-size: 40px;
+    margin-top: 100px;
+    transition: 0.3s ease;
+}
+.gallery h2:hover{
+    transform: scale(1.1);
+    text-shadow: -3px -3px 0 #fff, 3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff, 3px 4px 6px rgba(0, 0, 0, 0.413);
+}
+.gallery .carousel{
+    margin: 50px auto;
+    width: 100%;
+    display: flex;
+    overflow-x: auto;
+}
+.gallery .carousel::-webkit-scrollbar {
+    display: none;
+}
+.group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    animation: spin 10s infinite linear;
+    padding-right: 1em;
+}
+.card{
+    flex: 0 0 5em;
+    height: 250px;
+    background: #fff;
+    border: 3px solid white;
+    border-radius: 15px;
+    text-align: center;
+    align-content: center;
+}
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+}
+/* membuat style pada header */
+.header{
+    background-color: pink;
+    padding: 20px;
+    text-align: center;
+}
+/* membuat style pada navigator/topnav */
+.topnav{
+    overflow: hidden;
+    background-color: bisque;
+}
+/* membuat style link pada navigator/topnav */
+.topnav a{
+    float: left;
+    display: block;
+    color: brown;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.topnav a:hover{
+    background-color: cornsilk;
+    color: brown;
+}
+.column{
+    float: left;
+    padding: 10px;
+}
+/* membuat style pada column kanan kiri */
+.column.side{
+    width: 25%;
+}
+/* membuat style pada column tengah */
+.column.middle{
+    width: 50%;
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.footer{
+    background-color: lemonchiffon;
+    padding: 10px;
+    text-align: center;
+}
+h2{
+    color: whitesmoke;
+    background-color: rgb(119,192,227);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.413);
+    font-size: 30px;
+}

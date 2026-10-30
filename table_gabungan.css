@@ -1,0 +1,24 @@
+Table, th, td{
+    border: 1px solid black;
+}
+table{
+    width: 60%;
+    border-collapse: collapse;
+}
+th{
+    height: 40px;
+    padding: 2px;
+    background-color: beige;
+}
+td.merah{
+    color: red;
+}
+tr{
+    background-color: rgb(159, 241, 159);
+}
+tr:nth-child(even){
+    background-color: blanchedalmond;
+}
+tr:hover{
+    background-color: pink;
+}
