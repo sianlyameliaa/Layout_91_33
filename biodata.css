@@ -1,0 +1,407 @@
+body{ 
+    background-image: url(toy\ story.jpe);
+    background-size: cover;
+    background-position: center;
+}
+h2{
+    color: whitesmoke;
+    background-color: rgb(119,192,227);
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 0px 2px 5px rgba(0, 0, 0, 0.413);
+    font-size: 30px;
+}
+div.biodatadiri{
+    background-color: rgb(249 212	69);
+    width: 500px;
+    height: 60px;
+    text-align:center;
+    align-items: center;
+    margin: 30px auto;
+    margin-top: 0px;
+}
+div.biodatadiri img{
+    width: 336.5px;
+    height: 50px;
+    padding: 5px;
+}
+div.biodata{
+    margin: 30px auto;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.32);
+    color: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+div.isi p{
+    font-family: Arial, Helvetica, sans-serif;
+}
+div.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+}
+div.foto{
+    position: relative;
+    width: 250px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+}
+div.foto img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+div.foto img.top{
+    opacity: 1;
+    z-index: 2;
+}
+.foto:hover img.top{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.foto img.bottom{
+    opacity: 0;
+    z-index: 1;
+}
+.foto:hover img.bottom{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.makanan p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    background-color: rgb(1,61,123);
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 !important;
+}
+div.makanan{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+div.kontenmkn{
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+div.fotomkn img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.fotomkn img:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267);
+}
+div.kontenmkn2{
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+div.fotomkn2 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.fotomkn2 img:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.minuman{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+div.minuman p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    background-color:rgb(197,35,48);
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 !important;
+}
+div.kontenminum{
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+div.kontenminum img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.kontenminum img:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.lagu{
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+div.lagu p{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: white;
+    font-size: 30px;
+    align-items: center;
+    background-color: rgb(249,212,69);
+    border-radius: 15px;
+    padding: 10px;
+    display: inline-block;
+    margin: 0 !important;
+}
+div.kontenlagu{
+    margin: 30px auto;
+    background-color: rgba(0, 0, 0, 0);
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    gap: 30px;
+}
+div.fotolagu img{
+    width: 150px;
+    height: 150px;
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+div.fotolagu img:hover{
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.you{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+div.you:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.you img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+div.you img.top1{
+    opacity: 1;
+    z-index: 2;
+}
+.you:hover img.top1{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.you img.bot1{
+    opacity: 0;
+    z-index: 1;
+}
+.you:hover img.bot1{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.amillion{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+div.amillion:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.amillion img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+div.amillion img.top2{
+    opacity: 1;
+    z-index: 2;
+}
+.amillion:hover img.top2{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.amillion img.bot2{
+    opacity: 0;
+    z-index: 1;
+}
+.amillion:hover img.bot2{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.tangled{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+div.tangled:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.tangled img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+div.tangled img.top3{
+    opacity: 1;
+    z-index: 2;
+}
+.tangled:hover img.top3{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.tangled img.bot3{
+    opacity: 0;
+    z-index: 1;
+}
+.tangled:hover img.bot3{
+    opacity: 1;
+    transform: scale(1.1);
+}
+div.little{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 15px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+div.little:hover{
+    transform: scale(1.1);
+    box-shadow:
+    0px -10px 15px -3px rgba(0, 0, 0, 0.267), 
+    0px 10px 15px -3px rgba(0, 0, 0, 0.267),  
+    -10px 0px 15px -3px rgba(0, 0, 0, 0.267), 
+    10px 0px 15px -3px rgba(0, 0, 0, 0.267); 
+}
+div.little img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.5s ease; 
+    opacity: 0.5s ease;
+}
+div.little img.top4{
+    opacity: 1;
+    z-index: 2;
+}
+.little:hover img.top4{
+    opacity: 0;
+    transform: scale(1.1);
+}
+.little img.bot4{
+    opacity: 0;
+    z-index: 1;
+}
+.little:hover img.bot4{
+    opacity: 1;
+    transform: scale(1.1);
+}
