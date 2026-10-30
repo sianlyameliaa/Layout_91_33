@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Biodata Diri</title>
+        <link rel="stylesheet" href="biodata.css">
+    </head>
+    <body>
+        <h2>Selamat datang di Web Pertama Saya!</h2>
+        <div class="biodatadiri">
+            <img src="tulisanbiodatadiri.png">
+        </div>
+        <div class="biodata">
+            <div class="content">
+                <div class="foto">
+                    <img src="fotoorang.jpeg" alt="Foto Orang" class="top">
+                    <img src="fotokecil.jpeg" alt="Foto Kecil" class="bottom">
+                </div>
+                <div class="isi">
+                    <p>Nama Lengkap: Sianly Amelia Vega N</p>
+                    <p>Tempat/Tanggal Lahir: Jakarta, 13 Januari 2013</p>
+                    <p>Alamat: Kemayoran, Jakarta Pusat</p>
+                    <p>Email: <em>sianly_10178@smp.santaursulajakarta.sch.id</em></p>
+                    <p>Hobi: Mendengarkan musik</p>
+                    <p>Motto: Do your best, and let God do the rest</p>
+                    <p>Pesan: Never give up</p>
+                </div>
+            </div>
+        </div>
+        <div class="makanan">
+            <p><b>Makanan Favorit</b></p>
+        </div>
+        <div class="fotomkn">
+            <div class="kontenmkn">
+                <img src="sipud (1).jpeg" alt="Seafood" class="sipud">
+                <img src="sushi.jpg" alt="Sushi" class="sushi">
+                <img src="salmonmentai.jpg" alt="Salmon Mentai" class="mentai">
+                <img src="macncheese.jpe" alt="Mac n Cheese" class="mac">
+            </div>
+        </div>
+        <div class="fotomkn2">
+            <div class="kontenmkn2">
+                <img src="pecellele.jpg" alt="Pecel Lele" class="pecel">
+                <img src="nasgor.jpg" alt="Nasi Goreng Pete Ikan Teri" class="nasgor">
+                <img src="martabak.jpe" alt="Martabak Manis" class="martabak">
+                <img src="seblak.jpg" alt="Seblak" class="seblakbos">
+            </div>
+        </div>
+        <div class="minuman">
+            <p><b>Minuman Favorit</b></p>
+        </div>
+        <div class="fotominum">
+            <div class="kontenminum">
+                <img src="coklat (1).jpg" alt="Coklat" class="coklat">
+                <img src="susu.jpg" alt="Susu" class="susu">
+                <img src="jusjeruk.jpg" alt="Jus Jeruk" class="jus1">
+                <img src="jusalpukat.jpg" alt="Jus Alpukat" class="jus2">
+                </div>
+        </div>
+        <div class="lagu">
+            <p><b>Lagu Favorit</b></p>
+        </div>
+        <div class="fotolagu">
+            <div class="kontenlagu">
+                <div class="you">
+                    <img 
+                    src="You've Got A Friend in Me.png" 
+                    alt="Click to Play Music"
+                    onclick="toggleMusic('bg-music1')"
+                    style="cursor: pointer; width: 150px; height: auto;"
+                    class="top1"
+                    >
+                    <img src="1.png" class="bot1">
+                    <audio id="bg-music1" src="Youve Got a Friend in Me.mp3" loop></audio>
+                </div>
+                <div class="amillion">
+                    <img 
+                    src="A Million Dreams.png" 
+                    alt="Click to Play Music"
+                    onclick="toggleMusic('bg-music2')"
+                    style="cursor: pointer; width: 150px; height: auto;"
+                    class="top2">
+                    <img src="2.png" class="bot2">
+                    <audio id="bg-music2" src="A Million Dreams.mp3" loop></audio>
+                </div>
+                <div class="tangled">
+                    <img 
+                    src="Tangled.png" 
+                    alt="Click to Play Music"
+                    onclick="toggleMusic('bg-music3')"
+                    style="cursor: pointer; width: 150px; height: auto;"
+                    class="top3">
+                    <img src="3.png" class="bot3">
+                    <audio id="bg-music3" src="When Will My Life Begin.mp3" loop></audio>
+                </div>
+                <div class="little">
+                    <img 
+                    src="little memet.png" 
+                    alt="Click to Play Music"
+                    onclick="toggleMusic('bg-music4')"
+                    style="cursor: pointer; width: 150px; height: auto;"
+                    class="top4"
+                    >
+                    <img src="4.png" class="bot4">
+                    <audio id="bg-music4" src="Under the Sea.mp3" loop></audio>
+                </div>
+            </div>
+            <script>
+                function toggleMusic(audioId) {
+                    const currentAudio = document.getElementById(audioId);
+                    const allAudios = document.querySelectorAll('audio');
+                    allAudios.forEach(audio => {
+                    if (audio !== currentAudio) {
+                    audio.pause();
+                    }
+                    });
+                    if (currentAudio.paused) {
+                    currentAudio.play().catch(error => {
+                    console.log("Playback diblokir oleh browser:", error);
+                    });
+                    } else {
+                    currentAudio.pause();
+                    }
+                }
+             </script>
+        </div>
+    </body>
+</html>
